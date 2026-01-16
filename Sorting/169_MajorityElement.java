@@ -21,3 +21,12 @@ Constraints:
 n == nums.length
 1 <= n <= 5 * 10^4
 -10^9 <= nums[i] <= 10^9*/
+
+
+
+class Solution {
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length / 2];
+    }
+}
